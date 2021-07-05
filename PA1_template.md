@@ -51,7 +51,7 @@ Next, I will produce a histogram of the total number of steps taken per day.
 hist(stepsperday$steps, main = "Total Number of Steps Taken Per Day", xlab = "Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![plot of chunk unnamed-chunk-122](figure/unnamed-chunk-122-1.png)
 
 Lastly for this section, I will calculate the mean and median values of the total number of steps taken per day.
 
@@ -92,7 +92,7 @@ Next, I will make a time series plot of the 5-minute interval and the average nu
 plot(meanstepsperinterval$interval, meanstepsperinterval$steps, type = "l", main = "Average Steps Per 5-Minute Time Interval", xlab = "5-Minute Time Interval", ylab = "Average Number of Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![plot of chunk unnamed-chunk-125](figure/unnamed-chunk-125-1.png)
 
 Lastly for this section, I will find the time interval for which contains the maximum number of steps.
 
@@ -150,7 +150,7 @@ stepsperdayimputed <- activitydataimputed %>%
 hist(stepsperdayimputed$steps, main = "Total Number of Steps Taken Per Day (with Imputed Data)", xlab = "Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![plot of chunk unnamed-chunk-129](figure/unnamed-chunk-129-1.png)
 
 ```r
 print(c("Mean:", mean(stepsperdayimputed$steps)))
@@ -195,4 +195,4 @@ weekdayintervalplot <- xyplot(steps ~ interval | week, data = weekdayinterval, t
 update(weekdayintervalplot, layout=c(1,2))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
+![plot of chunk unnamed-chunk-131](figure/unnamed-chunk-131-1.png)
